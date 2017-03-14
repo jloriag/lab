@@ -1,0 +1,55 @@
+#container{
+    position: relative;
+    width: 70%;
+    border-style: solid;
+    border-color: chocolate;
+    background: burlywood;
+}
+
+.relative{
+    position: relative;
+}
+
+.relative p{
+    padding-left: 5em;
+}
+
+.fixed{
+    position: fixed;
+    z-index: 2;
+    margin-left: -200px;
+    left: 50%;
+}
+
+#container{
+    position: static;
+}
+
+.absolute{
+    position: absolute;
+    margin-left: -100px;
+    left: 50%;
+}
+
+.float{
+    width: 20%;
+    float: left;  
+}
+
+.columna1{
+    float: left;
+     width: 620px;
+    margin: 10px;
+}
+
+.colunma2{
+    float: left;
+    width: 300px;
+    margin: 10px;
+}
+
+.columna3, .colunma2, .columna1{
+    width: 300px;
+    float: left;
+    margin: 10px;
+}
