@@ -12,9 +12,9 @@ function usuario(nombre, fecha) {
     // Metodo Privado
     function calcularEdad() {
         fecha_hoy = new Date();
-        dia = fecha.split('-')[0];
-        mes = fecha.split('-')[1];
-        ano = fecha.split('-')[2];
+        dia = fecha.split('/')[0];
+        mes = fecha.split('/')[1];
+        ano = fecha.split('/')[2];
         ahora_ano = fecha_hoy.getYear();
         ahora_mes = fecha_hoy.getMonth();
         ahora_dia = fecha_hoy.getDate();
@@ -32,3 +32,4 @@ function usuario(nombre, fecha) {
         return edad;
     }
 }
+
