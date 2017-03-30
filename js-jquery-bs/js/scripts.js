@@ -5,13 +5,16 @@ function mostrarResultados(texto, estilo) {
 function usuario(nombre, fecha) {
     this.nombre = nombre;
     this.fecha = fecha;
-
+    
+    this.presentarse=function(){
+        $('#mostrarResultado').val("Hola, mi nombre es "+this.nombre+" y tengo "+calcularEdad()+" años.");
+    };
     // Metodo Privado
     function calcularEdad() {
         fecha_hoy = new Date();
-        dia = this.fecha.split('-')[0];
-        mes = this.fecha.split('-')[1];
-        ano = this.fecha.split('-')[2];
+        dia = fecha.split('-')[0];
+        mes = fecha.split('-')[1];
+        ano = fecha.split('-')[2];
         ahora_ano = fecha_hoy.getYear();
         ahora_mes = fecha_hoy.getMonth();
         ahora_dia = fecha_hoy.getDate();
