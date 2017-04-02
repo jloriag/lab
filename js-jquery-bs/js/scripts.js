@@ -1,5 +1,7 @@
 function mostrarResultados(texto, estilo) {
     $('#mostrarResultado').val(texto);
+    $('#mostrarResultado').removeClass('azul rojo amarillo verde rosado');
+    $('#mostrarResultado').addClass(estilo);
 }
 
 function usuario(nombre, fecha) {
