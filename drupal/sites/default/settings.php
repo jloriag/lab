@@ -775,3 +775,4 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_biFmSOU9IBL7lpanDH2ysRfsVeGyzUbNGMILSwtKvfS1qifdLwVhmDW_w2VZeN96wQEy7LfWzg/sync';
+$settings['twig_debug'] = TRUE;
