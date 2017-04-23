@@ -71,6 +71,7 @@
       {% if not navbar_attributes.hasClass(container) %}
         <div class="{{ container }}">
       {% endif %}
+      
       <div class="navbar-header">
         {{ page.navigation }}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
@@ -100,8 +101,13 @@
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
-    <div class="row">
-
+    
+      <div class="row">
+ 
+                <div class="col-md-12">
+                    <img class="img-responsive img-rounded" src="http://placehold.it/990x340" alt="">
+                </div>
+        
       {# Header #}
       {% if page.header %}
         {% block header %}
@@ -124,8 +130,8 @@
       {%
         set content_classes = [
           page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+          page.sidebar_first and page.sidebar_second is empty ? 'col-sm-12',
+          page.sidebar_second and page.sidebar_first is empty ? 'col-sm-12',
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
         ]
       %}
